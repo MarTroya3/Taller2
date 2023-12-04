@@ -1,69 +1,54 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Usuario de Grupo Acosta",
+	description: "Automatización de informes medio ambientales",
 	navItems: [
 		{
-			label: "Home",
+			label: "Inicio",
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Historia",
+      href: "/historia",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Servicios",
+      href: "/servicios",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Contacto",
+      href: "/contacto",
     },
-    {
-      label: "About",
-      href: "/about",
-    }
+
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Inicio",
+			href: "/",
 		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+    {
+      label: "Historia",
+      href: "/historia",
+    },
+    {
+      label: "Servicios",
+      href: "/servicios",
+    },
+    {
+      label: "Contacto",
+      href: "/contacto",
+    },
+	{
+		label: "Cerrar Sesión",
+    href: "/Cerrar Sesión",
+	  },
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui-docs-v2.vercel.app",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+		github: "https://github.com/MarTroya3",
+		twitter: "https://twitter.com/martrub3",
+		instagram: "https://www.instagram.com/marlyn_troya/",
+		facebook: "https://www.facebook.com/marlyn.troya2345",
+    
 	},
 };

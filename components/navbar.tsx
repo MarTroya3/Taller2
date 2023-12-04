@@ -10,6 +10,7 @@ import {
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
+	Avatar,
 } from "@nextui-org/react";
 
 import { link as linkStyles } from "@nextui-org/theme";
@@ -17,13 +18,11 @@ import { link as linkStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
-
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	TwitterIcon,
 	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
+	FacebookIcon,
 	SearchIcon,
 } from "@/components/icons";
 
@@ -32,10 +31,10 @@ import { Logo } from "@/components/icons";
 export const Navbar = () => {
 	const searchInput = (
 		<Input
-			aria-label="Search"
+			aria-label="Buscar"
 			classNames={{
 				inputWrapper: "bg-default-100",
-				input: "text-sm",
+				input: "text-9x1",
 			}}
 			endContent={
 				<Kbd className="hidden lg:inline-block" keys={["command"]}>
@@ -43,7 +42,7 @@ export const Navbar = () => {
 				</Kbd>
 			}
 			labelPlacement="outside"
-			placeholder="Search..."
+			placeholder="Buscar..."
 			startContent={
 				<SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
 			}
@@ -52,12 +51,15 @@ export const Navbar = () => {
 	);
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+		<NextUINavbar maxWidth="xl" 
+		position="sticky"
+		className="bg-green-700 text-white"
+		>
+			<NavbarContent className="basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<p className="font-bold text-inherit">GRUPO ACOSTA</p>
 					</NextLink>
 				</NavbarBrand>
 				<div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -83,8 +85,8 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.twitter}>
 						<TwitterIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.discord}>
-						<DiscordIcon className="text-default-500" />
+					<Link isExternal href={siteConfig.links.facebook}>
+						<FacebookIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github}>
 						<GithubIcon className="text-default-500" />
@@ -93,16 +95,11 @@ export const Navbar = () => {
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
-					<Button
-						isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
-						variant="flat"
-					>
-						Sponsor
-					</Button>
+				    <Avatar
+			            isBordered
+			            color="success"
+			            src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+						/>
 				</NavbarItem>
 			</NavbarContent>
 
