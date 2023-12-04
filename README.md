@@ -4,3 +4,4 @@ Grupo Acosta es un conjunto de empresas asociadas que brindan asesoría profesio
 Mapa de Capacidades: 
 ![image](https://github.com/MarTroya3/Taller2/assets/132024686/e2ff56d3-5d8a-426b-8093-afe620e4d212)
 Aplicación: Se ha creado una plataforma para técnicos, los mismos que deben ingresar con un usuario y contraseña. Una vez que ingresan, pueden acceder a los servicios de la empresa.
+![image](https://github.com/MarTroya3/Taller2/assets/132024686/5e8355f0-68b8-4b32-9252-a11d6c7aa6f4)
